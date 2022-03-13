@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.scroll-line{
+     height: 2px;
+     margin-bottom: -2px;
+     background: #007BFF;
+     /* imp to set width to 0 cz at start its 0 then it grows as client scrolls down in % */
+     width: 0%;
+}
+   
+header{
+     text-align:center;
+     position:fixed;
+     width:100%;
+     top:0;
+     left:0;
+     background-color: #fff;
+     border-bottom: 2px solid #e3e3e3;
+}
+
+/* not important */
+p{
+     font-size: 1.3rem;
+     line-height: 1.6;
+}
+
+main{
+     display:flex;
+     justify-content:center;
+     padding-top: 100px;
+}
+
+.main{
+     padding: 2em;
+     max-width: 60ch;
+}
